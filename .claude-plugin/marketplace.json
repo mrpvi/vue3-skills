@@ -1,0 +1,14 @@
+{
+  "name": "vue3-skills-marketplace",
+  "description": "Claude Code plugins for consistent Vue development.",
+  "owner": {
+    "name": "Ali Parvizi"
+  },
+  "plugins": [
+    {
+      "name": "vue3-skills",
+      "source": "./",
+      "description": "Vue contribution guidelines for consistent project structure, component contracts, state ownership, styling, and pragmatic Clean Code."
+    }
+  ]
+}

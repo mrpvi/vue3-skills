@@ -1,0 +1,15 @@
+{
+  "name": "vue3-skills",
+  "description": "Vue contribution guidelines for consistent project structure, component contracts, state ownership, styling, and pragmatic Clean Code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Parvizi"
+  },
+  "repository": "https://github.com/mrpvi/vue3-skills",
+  "keywords": [
+    "vue",
+    "vue3",
+    "frontend",
+    "clean-code"
+  ]
+}
