@@ -1,0 +1,40 @@
+{
+  "status": "Authored; activation runs have not been executed",
+  "method": {
+    "split": "18 train cases and 12 validation cases; each split balanced between positive and negative cases",
+    "runsPerPrompt": 3,
+    "instructions": "Test discovery with the skill installed only in an isolated compatible agent environment. Record actual activation, not what the model says it would activate. Revise using train failures; reserve validation cases for comparison. Do not silently install the skill into the user's active setup."
+  },
+  "cases": [
+    {"id":"P01","split":"train","shouldTrigger":true,"prompt":"Add a confirmation dialog to this Vue page. Follow the existing component structure and edit only the requested feature."},
+    {"id":"P02","split":"train","shouldTrigger":true,"prompt":"Fix the required-name validation in ItemForm.vue without changing other fields or files."},
+    {"id":"P03","split":"train","shouldTrigger":true,"prompt":"In this Vue wizard, should the draft live locally, in provide/inject, or in a Pinia store? Give a plan only."},
+    {"id":"P04","split":"train","shouldTrigger":true,"prompt":"Extract this repeated Vue selection behavior into a composable while keeping each table's selection independent."},
+    {"id":"P05","split":"train","shouldTrigger":true,"prompt":"Update the CSS for this Vue component to use BEM within the component's existing stylesheet."},
+    {"id":"P06","split":"train","shouldTrigger":true,"prompt":"Review this Vue diff for component contracts, state ownership, and contribution conventions. Do not change files."},
+    {"id":"N01","split":"train","shouldTrigger":false,"prompt":"Write a React hook for table selection. This project uses React and has no Vue code."},
+    {"id":"N02","split":"train","shouldTrigger":false,"prompt":"Explain what BEM stands for in a standalone CSS tutorial, without discussing a framework or changing code."},
+    {"id":"N03","split":"train","shouldTrigger":false,"prompt":"Create a new SKILL.md that teaches an agent how to summarize PDFs; explain the frontmatter requirements."},
+    {"id":"N04","split":"train","shouldTrigger":false,"prompt":"Change only the typo in the release date in README.md. Do not inspect or modify Vue source files."},
+    {"id":"N05","split":"train","shouldTrigger":false,"prompt":"Which Vue release introduced the Composition API? I only need a factual answer."},
+    {"id":"N06","split":"train","shouldTrigger":false,"prompt":"Fix the SQL query behind the API endpoint. The frontend is Vue, but frontend code is out of scope."},
+    {"id":"P07","split":"validation","shouldTrigger":true,"prompt":"The Vue results page sometimes displays an older search response after a newer one. Fix the race without redesigning the page."},
+    {"id":"P08","split":"validation","shouldTrigger":true,"prompt":"Plan a feature-based directory structure for a new Vue app using JavaScript and plain CSS, with no store library."},
+    {"id":"P09","split":"validation","shouldTrigger":true,"prompt":"Add a lazy-loaded details route and localized title to this Vue project, following its existing routing conventions."},
+    {"id":"P10","split":"validation","shouldTrigger":true,"prompt":"Fix this Vue SFC in an existing script-setup TypeScript module; preserve its authoring style and use its current store."},
+    {"id":"N07","split":"validation","shouldTrigger":false,"prompt":"Review the Go HTTP handler for this service. Its Vue client is not included in the review."},
+    {"id":"N08","split":"validation","shouldTrigger":false,"prompt":"Update only the Docker image tag used to host the already-built Vue bundle; do not change application code."},
+    {"id":"N09","split":"validation","shouldTrigger":false,"prompt":"Translate this prose paragraph comparing Vue and Angular into Spanish, without adding technical recommendations."},
+    {"id":"N10","split":"validation","shouldTrigger":false,"prompt":"Find the commit date when this repository upgraded Vue. Do not review or change its contribution conventions."},
+    {"id":"P11","split":"train","shouldTrigger":true,"prompt":"Set up a new Vue app with shared cart state and responsive styling using the contribution conventions; no state or styling tools are chosen yet."},
+    {"id":"P12","split":"train","shouldTrigger":true,"prompt":"This Vue app has SCSS but no state manager. Implement a cross-route queue and the necessary shared-state setup; preserve SCSS."},
+    {"id":"P13","split":"train","shouldTrigger":true,"prompt":"Our Vue app uses Vuex and has no styling method. Set up styling for a responsive settings screen without changing state management."},
+    {"id":"N11","split":"train","shouldTrigger":false,"prompt":"Update Tailwind styles in this React component. There are no Vue files in this project."},
+    {"id":"N12","split":"train","shouldTrigger":false,"prompt":"Summarize Pinia's licensing terms in prose; do not review or change application code."},
+    {"id":"N13","split":"train","shouldTrigger":false,"prompt":"Create a standalone HTML page with Tailwind for a non-Vue static website."},
+    {"id":"P14","split":"validation","shouldTrigger":true,"prompt":"Fix the loading indicator in this Vue app using its current Tailwind v3 setup. Do not upgrade Tailwind or change configuration."},
+    {"id":"P15","split":"validation","shouldTrigger":true,"prompt":"Review this Vue Pinia cart store and its component for lost reactivity and account-reset behavior. Keep the review read-only."},
+    {"id":"N14","split":"validation","shouldTrigger":false,"prompt":"Compare Tailwind and Bootstrap for an article about static HTML websites, not Vue contribution practices."},
+    {"id":"N15","split":"validation","shouldTrigger":false,"prompt":"Only correct the spelling of Pinia in this Markdown changelog; no frontend implementation work."}
+  ]
+}
